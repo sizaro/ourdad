@@ -23,8 +23,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    flex-direction: column;
     width: 100%;
+    background: url(../images/hero1.jpg) no-repeat center/cover;
+    height: 70vh;
 }
 
 .top-header {
@@ -32,6 +34,7 @@ header {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
 .logo a {
@@ -58,10 +61,6 @@ header {
 nav {
     display: none;
     justify-content: space-between;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
     padding: 10px 20px;
     border-top: 2px solid #fff;
     backdrop-filter: blur(10px);
@@ -70,14 +69,11 @@ nav {
 nav.active{
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 6rem;
-    left: 0;
-    right: 0;
     padding: 10px 20px;
-    border-top: 2px solid #fff;
     backdrop-filter: blur(5px);
     z-index: 1;
+    height: 60vh;
+    width: 100%;
 }
 
 nav ul {
@@ -117,7 +113,7 @@ nav ul li a:hover {
 }
 
 .close-humburger:hover{
-    background-color: blueviolet;
+    background-color: var(--secondary-color);
 }
 
 .xspan1{
@@ -143,12 +139,6 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    background: url(../images/hero1.jpg) no-repeat center/cover;
-    width: 100%;
-    height: 60vh;
 }
 
 .school-title {
@@ -478,6 +468,6 @@ footer {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
    
 }
